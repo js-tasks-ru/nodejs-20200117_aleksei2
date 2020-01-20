@@ -1,5 +1,6 @@
 function sum(a, b) {
-  /* ваш код */
+  if (a !== parseInt(a) || b !== parseInt(b)) throw new TypeError();
+  return a + b;
 }
 
 module.exports = sum;
